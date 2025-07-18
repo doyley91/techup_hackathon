@@ -7,7 +7,10 @@
 -- =====================================================
 -- Create an internal stage called "reports" for storing report files
 CREATE OR REPLACE STAGE reports
-COMMENT = 'Internal stage for storing report files and documents';
+COMMENT = 'Internal stage for storing report files and documents';CREATE OR REPLACE STAGE reports
+    DIRECTORY = ( ENABLE = true ) 
+    ENCRYPTION = ( TYPE = 'SNOWFLAKE_SSE' )
+    COMMENT = 'Internal stage for storing report files and documents';
 
 -- Show stage details
 DESCRIBE STAGE reports;
