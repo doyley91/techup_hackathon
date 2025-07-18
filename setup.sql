@@ -2,6 +2,10 @@
 -- Snowflake Setup Worksheet - Internal Stage Creation
 -- =====================================================
 
+USE ROLE SYSADMIN;
+USE DATABASE MY_DEMOS_DB;
+USE SCHEMA TECHUP_HACKATHON_FSI;
+
 -- =====================================================
 -- CREATE INTERNAL STAGE
 -- =====================================================
